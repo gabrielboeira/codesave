@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="astronauta.svg" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+           <h1>Faça login<br>E guarde seus projetos</h1>
+           <img src="astronauta.svg" class="left-login-image" alt="animation">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="usuario">
+                </div>
+
+                <div class="textfield">
+                    <label for="usuario">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+                <button class="btn-login" onclick="login()">Login</button>
+                <div class="cadastro">
+                    <h3 class="txt-cadastro">Não tem cadastro? <a class="link-txt" href="cadastro.html">Registre-se</a></h3>
+                </div>
+            </div>
+        </div>
+        
+    </div>    
+
+    <script src="login.js"></script>
+</body>
+
+</html>

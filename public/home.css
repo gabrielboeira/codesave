@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'noto sans';
+    background-color: #201b2c;
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+  .home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #00ff88;;
+    margin-bottom: 20px;
+  }
+  
+  .add-project-form {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .add-project-form input {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #514869;
+    color: #fff;
+  }
+  
+  .add-project-form button {
+    padding: 10px 20px;
+    background: #00ff88;
+    border: none;
+    border-radius: 5px;
+    color: #2b134b;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+    text-transform: uppercase;
+    font-weight: 800;
+    box-shadow: 0px 10px 40px -12px #00ff8052
+  }
+  
+  .add-project-form button:hover {
+    background: #00c76a ;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .project-card {
+    background: #302746;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 10px 40px #00000056;
+    transition: transform 0.3s;
+    text-align: center;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card h3 {
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .project-card a {
+    text-decoration: none;
+    color: #00ff88;;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .project-card a:hover {
+    color: #00c76a;
+  }
+
+  .btn-delete {
+    display: block;
+    margin: 5px 0 5px; /* Remove o auto para alinhamento central */
+    padding: 10px 10px;
+    background: #00ff88;
+    color: #2b134b;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0px 10px 40px -12px #00ff8052
+  }
+
+  .btn-logout {
+    display: block;
+    margin: 10px 0 20px 0; /* Remove o auto para alinhamento central */
+    padding: 10px 20px;
+    background: #00ff88;
+    color: #2b134b;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0px 10px 40px -12px #00ff8052
+  }
+  
+  .btn-logout:hover {
+    background: #00c76a;
+  }
+  

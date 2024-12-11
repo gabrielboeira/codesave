@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Projetos</title>
+  <link rel="stylesheet" href="/public/home.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="astronauta.svg" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="home-container">
+    <button class="btn-logout" onclick="logout()">Sair</button>
+    <h1>Meus Projetos</h1>
+    <form id="project-form" class="add-project-form">
+      <input type="text" id="project-name" placeholder="Nome do projeto" required>
+      <input type="file" id="project-image" accept="images/*" required>
+      <input type="url" id="project-link" placeholder="Link do GitHub" required>
+      <button type="submit">Adicionar Projeto</button>
+    </form>
+    <div id="projects-grid" class="projects-grid">
+    </div>
+  </div>
+  <script src="home.js"></script>
+</body>
+</html>

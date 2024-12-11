@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/cadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="shortcut icon" href="astronauta.svg" type="image/x-icon">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+           <img src="astronauta-v2.svg" class="left-login-image" alt="animation">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Cadastro</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="usuario">
+                </div>
+
+                <div class="textfield">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="E-mail">
+                </div>
+
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha">
+                </div>
+
+                <div class="textfield">
+                    <label for="date">Data de nascimento</label>
+                    <input type="date" name="date" placeholder="date">
+                </div>
+                <form onsubmit="register(event)">
+                    <button class="btn-cadastro" type="submit">Cadastrar</button>
+                </form>
+
+            </div>
+        </div>
+        
+    </div>    
+    <script src="register.js"></script>
+</body>
+
+</html>
